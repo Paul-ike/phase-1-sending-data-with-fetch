@@ -5,7 +5,7 @@ let email = "shot@shot.com"
 let body = document.querySelector("body");
 
 
-const  submitData = (name, email) => {
+const  submitData = (userName, userEmail) => {
 return fetch("http://localhost:3000/users",{
     method: "POST",
     headers: {
@@ -13,8 +13,8 @@ return fetch("http://localhost:3000/users",{
         Accept: "application/json"
     },
     body: JSON.stringify({
-        name: name,
-        email: email
+        name: userName,
+        email: userEmail
     })
 })
 
